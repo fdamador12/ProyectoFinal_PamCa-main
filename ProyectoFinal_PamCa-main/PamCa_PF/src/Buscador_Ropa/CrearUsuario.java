@@ -13,7 +13,7 @@ public class CrearUsuario extends javax.swing.JFrame {
         confirma.setVisible(false);
         Cerrar_Carrito.confirmarSalida(this);
     }
-
+//mghmghjgjh
     private static String clavesegura = "12345";
 
     @SuppressWarnings("unchecked")

@@ -1,0 +1,7 @@
+
++ Cuando se vayan a crear las listas de las prendas de las otras categorias usar listaprendasc para calzado y listaprendasi para pantalones
+
+
+
+
+

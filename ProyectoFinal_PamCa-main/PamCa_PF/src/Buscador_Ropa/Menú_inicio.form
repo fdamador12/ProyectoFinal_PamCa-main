@@ -131,9 +131,8 @@
     <Component class="javax.swing.JButton" name="prendassuperiores">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Buscador_Ropa/prenda_superior.png"/>
+          <Image iconType="3" name="/Buscador_Ropa/prendas_superiores_150.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Prendas superiores"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="prendassuperioresActionPerformed"/>

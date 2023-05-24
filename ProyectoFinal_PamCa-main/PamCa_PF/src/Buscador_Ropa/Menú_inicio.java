@@ -58,8 +58,7 @@ public class Menú_inicio extends javax.swing.JFrame {
             }
         });
 
-        prendassuperiores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/prenda_superior.png"))); // NOI18N
-        prendassuperiores.setText("Prendas superiores");
+        prendassuperiores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/prendas_superiores_150.png"))); // NOI18N
         prendassuperiores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 prendassuperioresActionPerformed(evt);

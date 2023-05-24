@@ -13,7 +13,6 @@ public class CrearUsuario extends javax.swing.JFrame {
         confirma.setVisible(false);
         Cerrar_Carrito.confirmarSalida(this);
     }
-//mghmghjgjh
     private static String clavesegura = "12345";
 
     @SuppressWarnings("unchecked")
@@ -69,6 +68,7 @@ public class CrearUsuario extends javax.swing.JFrame {
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/llave_gris.png"))); // NOI18N
         jLabel9.setText("Clave (Administrador): ");
 
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/tipo_cuenta.png"))); // NOI18N
         jLabel10.setText("Tipo de cuenta:");
 
         buttonGroup1.add(admin);
@@ -142,27 +142,24 @@ public class CrearUsuario extends javax.swing.JFrame {
                                                 .addGap(6, 6, 6)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(clave, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                        .addGap(0, 1, Short.MAX_VALUE)))))
-                        .addGap(16, 16, 16)))
+                                                    .addComponent(confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addComponent(admin)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(cliente))))))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel10)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(11, 11, 11)))
                 .addGap(113, 113, 113))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(regresar)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(crear)
-                .addGap(328, 328, 328))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(240, 240, 240)
-                        .addComponent(jLabel10)
-                        .addGap(112, 112, 112)
-                        .addComponent(admin)
-                        .addGap(18, 18, 18)
-                        .addComponent(cliente))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(regresar)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(307, 307, 307))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,7 +180,7 @@ public class CrearUsuario extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(correo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, Short.MAX_VALUE)
+                .addGap(18, 43, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(contrasena, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -198,14 +195,14 @@ public class CrearUsuario extends javax.swing.JFrame {
                             .addComponent(jLabel9)
                             .addComponent(clave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(56, 56, 56)
+                .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(admin)
                     .addComponent(cliente))
-                .addGap(30, 30, 30)
+                .addGap(53, 53, 53)
                 .addComponent(crear)
-                .addGap(59, 59, 59)
+                .addGap(58, 58, 58)
                 .addComponent(regresar)
                 .addGap(137, 137, 137))
         );

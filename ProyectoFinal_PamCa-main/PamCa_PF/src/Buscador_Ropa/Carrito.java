@@ -116,6 +116,7 @@ public class Carrito extends javax.swing.JFrame {
             }
         });
 
+        comprar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/dedo_color.png"))); // NOI18N
         comprar.setText("Comprar");
         comprar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -343,6 +344,7 @@ public class Carrito extends javax.swing.JFrame {
             price = sumaprecio;
             FacturaCompra fc = new FacturaCompra();
             fc.setVisible(true);
+            this.setVisible(false); 
         }
     }//GEN-LAST:event_comprarActionPerformed
 

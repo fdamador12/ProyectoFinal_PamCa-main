@@ -25,13 +25,14 @@ public class Menú_inicio extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         carrito = new javax.swing.JButton();
         cuenta = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         calzado = new javax.swing.JButton();
         prendassuperiores = new javax.swing.JButton();
         prendasinferiores = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 204, 204));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
@@ -53,10 +54,6 @@ public class Menú_inicio extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(858, 40, 80, 59));
-
-        jLabel3.setBackground(new java.awt.Color(153, 51, 0));
-        jLabel3.setForeground(new java.awt.Color(153, 51, 0));
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-5, 0, 980, 580));
 
         jLabel2.setText("Bienvenido al catalogo de ropa a la moda PamCa. A continuación seleccione el tipo de prenda que esta buscando.");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 143, -1, -1));
@@ -84,6 +81,9 @@ public class Menú_inicio extends javax.swing.JFrame {
             }
         });
         getContentPane().add(prendasinferiores, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, -1, 180));
+
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 570));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -159,7 +159,7 @@ public class Menú_inicio extends javax.swing.JFrame {
     private javax.swing.JButton cuenta;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton prendasinferiores;
     private javax.swing.JButton prendassuperiores;
     // End of variables declaration//GEN-END:variables

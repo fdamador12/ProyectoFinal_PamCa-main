@@ -62,7 +62,7 @@ public class Menú_inicio extends javax.swing.JFrame {
                 calzadoActionPerformed(evt);
             }
         });
-        getContentPane().add(calzado, new org.netbeans.lib.awtextra.AbsoluteConstraints(651, 265, -1, 168));
+        getContentPane().add(calzado, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 210, -1, 180));
 
         prendassuperiores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/prendas_superiores_200.png"))); // NOI18N
         prendassuperiores.addActionListener(new java.awt.event.ActionListener() {
@@ -70,7 +70,7 @@ public class Menú_inicio extends javax.swing.JFrame {
                 prendassuperioresActionPerformed(evt);
             }
         });
-        getContentPane().add(prendassuperiores, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 265, -1, 167));
+        getContentPane().add(prendassuperiores, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, -1, 180));
 
         prendasinferiores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/prenda_inferior_200.png"))); // NOI18N
         prendasinferiores.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +78,7 @@ public class Menú_inicio extends javax.swing.JFrame {
                 prendasinferioresActionPerformed(evt);
             }
         });
-        getContentPane().add(prendasinferiores, new org.netbeans.lib.awtextra.AbsoluteConstraints(398, 265, -1, 168));
+        getContentPane().add(prendasinferiores, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, -1, 180));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

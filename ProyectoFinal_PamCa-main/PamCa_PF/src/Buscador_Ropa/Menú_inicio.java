@@ -30,6 +30,7 @@ public class Menú_inicio extends javax.swing.JFrame {
         prendassuperiores = new javax.swing.JButton();
         prendasinferiores = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        jLabel_fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 204, 204));
@@ -82,7 +83,11 @@ public class Menú_inicio extends javax.swing.JFrame {
         });
         getContentPane().add(prendasinferiores, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, -1, 180));
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel_fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/fondoInicio2.jpg"))); // NOI18N
+        jPanel1.add(jLabel_fondo);
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 570));
 
         pack();
@@ -159,6 +164,7 @@ public class Menú_inicio extends javax.swing.JFrame {
     private javax.swing.JButton cuenta;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel_fondo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton prendasinferiores;
     private javax.swing.JButton prendassuperiores;

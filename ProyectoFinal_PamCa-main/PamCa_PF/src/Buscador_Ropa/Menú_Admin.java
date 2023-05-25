@@ -35,14 +35,19 @@ public class Menú_Admin extends javax.swing.JFrame {
         actualizar = new javax.swing.JButton();
         consultar = new javax.swing.JButton();
         regresar = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         jScrollPane1.setViewportView(jEditorPane1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel2.setText("Bienvenido al menú de administrador, aqui podrá escoger las diferentes opciones de gestión");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 120, 623, -1));
 
         jLabel3.setText("del inventario que puede realizar:");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 142, 486, -1));
 
         agregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/nuevo_producto.png"))); // NOI18N
         agregar.setText("Agregar un producto al inventario");
@@ -51,9 +56,11 @@ public class Menú_Admin extends javax.swing.JFrame {
                 agregarActionPerformed(evt);
             }
         });
+        jPanel1.add(agregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 196, 343, -1));
 
         jLabel1.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
         jLabel1.setText("PamCa");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(243, 49, -1, -1));
 
         eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/eliminar_25.png"))); // NOI18N
         eliminar.setText("Eliminar un producto del inventario");
@@ -62,6 +69,7 @@ public class Menú_Admin extends javax.swing.JFrame {
                 eliminarActionPerformed(evt);
             }
         });
+        jPanel1.add(eliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 255, 343, -1));
 
         actualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/actualizar.png"))); // NOI18N
         actualizar.setText("Actualizar la cantidad de algun producto");
@@ -70,6 +78,7 @@ public class Menú_Admin extends javax.swing.JFrame {
                 actualizarActionPerformed(evt);
             }
         });
+        jPanel1.add(actualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 320, 343, -1));
 
         consultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/lupa_negra.png"))); // NOI18N
         consultar.setText("Consultar el inventario actual");
@@ -78,6 +87,7 @@ public class Menú_Admin extends javax.swing.JFrame {
                 consultarActionPerformed(evt);
             }
         });
+        jPanel1.add(consultar, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 378, 343, -1));
 
         regresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/flecha_regresar.png"))); // NOI18N
         regresar.addActionListener(new java.awt.event.ActionListener() {
@@ -85,59 +95,11 @@ public class Menú_Admin extends javax.swing.JFrame {
                 regresarActionPerformed(evt);
             }
         });
+        jPanel1.add(regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 444, -1, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(243, 243, 243)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(regresar)))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 623, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(157, 157, 157)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(agregar, javax.swing.GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
-                            .addComponent(consultar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(actualizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(eliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addComponent(jLabel1)
-                .addGap(12, 12, 12)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addGap(38, 38, 38)
-                .addComponent(agregar)
-                .addGap(27, 27, 27)
-                .addComponent(eliminar)
-                .addGap(33, 33, 33)
-                .addComponent(actualizar)
-                .addGap(26, 26, 26)
-                .addComponent(consultar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addComponent(regresar))
-        );
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/fondoInicio2.jpg"))); // NOI18N
+        jLabel4.setToolTipText("");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 540));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -233,6 +195,7 @@ public class Menú_Admin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton regresar;

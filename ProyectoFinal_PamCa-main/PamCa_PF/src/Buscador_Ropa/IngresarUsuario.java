@@ -35,30 +35,41 @@ public class IngresarUsuario extends javax.swing.JFrame {
         acceder = new javax.swing.JButton();
         regresar = new javax.swing.JButton();
         contra = new javax.swing.JPasswordField();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
         jLabel1.setText("PamCa");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 29, -1, -1));
 
         jLabel2.setText("Bienvenido a PamCa, para ingresar su cuenta  llene los siguientes campos con la"); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 100, -1, -1));
 
         jLabel3.setText(" información corrspontiende, recuerde  que si se trata de una cuenta de administrador debe especificarlo.");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 122, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/usuario_gris.png"))); // NOI18N
         jLabel4.setText("Nombre de usuario:");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 194, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/candado_gris.png"))); // NOI18N
         jLabel5.setText("Contraseña:");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 243, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/tipo_cuenta.png"))); // NOI18N
         jLabel6.setText("Tipo de usuario:");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 289, -1, -1));
 
         buttonGroup1.add(admin);
         admin.setText("Administrador");
+        getContentPane().add(admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 291, -1, -1));
 
         buttonGroup1.add(cliente);
         cliente.setText("Cliente");
+        getContentPane().add(cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 328, -1, -1));
+        getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 195, 167, -1));
 
         acceder.setText("Acceder");
         acceder.addActionListener(new java.awt.event.ActionListener() {
@@ -66,6 +77,7 @@ public class IngresarUsuario extends javax.swing.JFrame {
                 accederActionPerformed(evt);
             }
         });
+        getContentPane().add(acceder, new org.netbeans.lib.awtextra.AbsoluteConstraints(276, 367, -1, -1));
 
         regresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/flecha_regresar.png"))); // NOI18N
         regresar.addActionListener(new java.awt.event.ActionListener() {
@@ -73,73 +85,11 @@ public class IngresarUsuario extends javax.swing.JFrame {
                 regresarActionPerformed(evt);
             }
         });
+        getContentPane().add(regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 419, -1, -1));
+        getContentPane().add(contra, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 244, 167, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING))
-                .addGap(92, 92, 92)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(cliente)
-                    .addComponent(admin)
-                    .addComponent(nombre, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
-                    .addComponent(contra))
-                .addGap(109, 109, 109))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(63, 63, 63)
-                                .addComponent(jLabel2))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(213, 213, 213)
-                                .addComponent(jLabel1))
-                            .addComponent(jLabel3)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(regresar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(276, 276, 276)
-                        .addComponent(acceder)))
-                .addContainerGap(40, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addGap(56, 56, 56)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(contra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(admin))
-                .addGap(14, 14, 14)
-                .addComponent(cliente)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                .addComponent(acceder)
-                .addGap(29, 29, 29)
-                .addComponent(regresar)
-                .addGap(21, 21, 21))
-        );
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/fondoIngreso.jpg"))); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -236,6 +186,7 @@ public class IngresarUsuario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JTextField nombre;
     private javax.swing.JButton regresar;
     // End of variables declaration//GEN-END:variables

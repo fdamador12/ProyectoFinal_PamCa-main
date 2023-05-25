@@ -83,11 +83,14 @@ public class Carrito extends javax.swing.JFrame {
         text2 = new javax.swing.JLabel();
         cantidadcambiar = new javax.swing.JTextField();
         aceptar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
         jLabel2.setText("PamCa");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(353, 26, -1, -1));
 
         tablacarrito.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -102,12 +105,15 @@ public class Carrito extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablacarrito);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 141, 737, 275));
+
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/cuenta_usuario.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(902, 26, 80, 59));
 
         atras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/flecha_regresar.png"))); // NOI18N
         atras.addActionListener(new java.awt.event.ActionListener() {
@@ -115,6 +121,7 @@ public class Carrito extends javax.swing.JFrame {
                 atrasActionPerformed(evt);
             }
         });
+        getContentPane().add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 467, -1, -1));
 
         comprar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/dedo_color.png"))); // NOI18N
         comprar.setText("Comprar");
@@ -123,6 +130,7 @@ public class Carrito extends javax.swing.JFrame {
                 comprarActionPerformed(evt);
             }
         });
+        getContentPane().add(comprar, new org.netbeans.lib.awtextra.AbsoluteConstraints(669, 467, -1, -1));
 
         editarcarrito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/modificar_carro_50.png"))); // NOI18N
         editarcarrito.setText("Editar Carrito");
@@ -131,12 +139,17 @@ public class Carrito extends javax.swing.JFrame {
                 editarcarritoActionPerformed(evt);
             }
         });
+        getContentPane().add(editarcarrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(861, 467, -1, -1));
 
         text1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/mas_menos_25.png"))); // NOI18N
         text1.setText("Cambiar cantidad de la prenda:");
+        getContentPane().add(text1, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 141, -1, 29));
+        getContentPane().add(prendacambiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(849, 182, 165, 34));
 
         text2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/nueva_cantidad_25.png"))); // NOI18N
         text2.setText("Nueva cantidad:");
+        getContentPane().add(text2, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 255, -1, 29));
+        getContentPane().add(cantidadcambiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(849, 296, 165, 34));
 
         aceptar.setText("Aceptar");
         aceptar.addActionListener(new java.awt.event.ActionListener() {
@@ -144,80 +157,10 @@ public class Carrito extends javax.swing.JFrame {
                 aceptarActionPerformed(evt);
             }
         });
+        getContentPane().add(aceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(902, 358, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(atras)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(comprar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 737, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(288, 288, 288)))
-                        .addGap(30, 30, 30)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(61, 61, 61)
-                                    .addComponent(editarcarrito))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(3, 3, 3)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(text2)
-                                        .addComponent(text1))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(prendacambiar, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cantidadcambiar, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap(56, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(88, 88, 88))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(aceptar)
-                                .addGap(96, 96, 96))))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(text1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(prendacambiar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(39, 39, 39)
-                        .addComponent(text2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(cantidadcambiar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(aceptar)))
-                .addGap(51, 51, 51)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comprar)
-                    .addComponent(atras)
-                    .addComponent(editarcarrito))
-                .addGap(38, 38, 38))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/fondoCarrito.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 560));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -398,6 +341,7 @@ public class Carrito extends javax.swing.JFrame {
     private javax.swing.JButton comprar;
     private javax.swing.JButton editarcarrito;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField prendacambiar;

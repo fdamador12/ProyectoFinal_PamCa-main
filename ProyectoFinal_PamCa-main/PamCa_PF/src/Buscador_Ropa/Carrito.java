@@ -5,6 +5,7 @@ import static Buscador_Ropa.PrendasSuperiores.listaPrenda;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -16,12 +17,12 @@ import javax.swing.table.TableColumn;
  * @author Juan Pardo
  */
 public class Carrito extends javax.swing.JFrame {
-    
+
     public static String Fecha;
     public static String name;
     public static int cantidad;
     public static float price;
-    
+
     public Carrito() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -281,13 +282,29 @@ public class Carrito extends javax.swing.JFrame {
             DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
             String fechaHora = fechaHoraActual.format(formato);
             FileManager.guardarInformacion(fechaHora, sumacant, usuname, sumaprecio, "Usuarios/FacturasVentas.txt");
+            try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bd_codigo", "frank", "1234")) {
+                String sql = "UPDATE ropa SET cantidad = ? WHERE cantidad_carrito IS NOT NULL";
+
+                for (prenda ropa : listaPrenda) {
+
+                    PreparedStatement stmt = conn.prepareStatement(sql);
+                    stmt.setInt(1, ropa.getCantidad() - ropa.getCantidadCarrito());
+                    stmt.executeUpdate();
+                    stmt.close();
+
+                }
+
+                System.out.println("Actualización de cantidad completada.");
+            } catch (SQLException e) {
+                System.out.println("Error al actualizar la cantidad: " + e.getMessage());
+            }
             Fecha = fechaHora;
             cantidad = sumacant;
             name = usuname;
             price = sumaprecio;
             FacturaCompra fc = new FacturaCompra();
             fc.setVisible(true);
-            this.setVisible(false); 
+            this.setVisible(false);
         }
     }//GEN-LAST:event_comprarActionPerformed
 

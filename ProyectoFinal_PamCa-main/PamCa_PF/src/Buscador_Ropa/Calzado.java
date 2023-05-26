@@ -145,21 +145,28 @@ public class Calzado extends javax.swing.JFrame {
         imagenlugar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         getContentPane().add(imagenlugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(239, 116, 351, 304));
 
-        talla.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        getContentPane().add(talla, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 468, 215, 24));
+        talla.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        talla.setForeground(new java.awt.Color(255, 255, 255));
+        talla.setText("###");
+        getContentPane().add(talla, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 470, 90, 20));
 
-        nombre.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        nombre.setText("NOMBRE PRENDA");
-        getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 460, 304, 24));
+        nombre.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        nombre.setForeground(new java.awt.Color(255, 255, 255));
+        nombre.setText("nombre prenda");
+        getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, 304, 24));
 
-        precio.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        getContentPane().add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 498, 106, 24));
+        precio.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        precio.setForeground(new java.awt.Color(255, 255, 255));
+        precio.setText("###");
+        getContentPane().add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 500, 100, 20));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("USD");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(468, 498, 91, 24));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, 91, 24));
 
         jLabel2.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("PamCa");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 25, -1, -1));
 
@@ -187,13 +194,15 @@ public class Calzado extends javax.swing.JFrame {
         });
         getContentPane().add(carrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 24, 80, 59));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel4.setText("Talla:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 468, 67, 24));
+        jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Talla: ");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, 67, 24));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Precio:");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 502, 67, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 500, 67, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/fondoPrendas.jpg"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 0, 850, 640));

@@ -137,22 +137,30 @@ public class PrendasInferiores extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 529, -1, -1));
 
         imagenlugar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(imagenlugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(239, 117, 351, 304));
+        getContentPane().add(imagenlugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 351, 304));
 
-        talla.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        talla.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        talla.setForeground(new java.awt.Color(242, 242, 242));
+        talla.setText("###");
         getContentPane().add(talla, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 469, 219, 24));
 
-        nombre.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 439, 304, 24));
+        nombre.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        nombre.setForeground(new java.awt.Color(242, 242, 242));
+        nombre.setText("nombre prenda");
+        getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 470, 304, 24));
 
-        precio.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        precio.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        precio.setForeground(new java.awt.Color(242, 242, 242));
+        precio.setText("$$$");
         getContentPane().add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 499, 122, 24));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(242, 242, 242));
         jLabel1.setText("USD");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(499, 499, 91, 24));
 
         jLabel2.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(242, 242, 242));
         jLabel2.setText("PamCa");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 26, -1, -1));
 
@@ -180,11 +188,13 @@ public class PrendasInferiores extends javax.swing.JFrame {
         });
         getContentPane().add(carrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(528, 25, 80, 59));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(242, 242, 242));
         jLabel3.setText("Talla:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 469, 110, 24));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(242, 242, 242));
         jLabel4.setText("Precio:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 499, 110, 24));
 

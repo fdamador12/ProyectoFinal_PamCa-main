@@ -100,20 +100,29 @@ public class PrendasSuperiores extends javax.swing.JFrame {
         imagenlugar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         getContentPane().add(imagenlugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 119, 351, 304));
 
-        talla.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        talla.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        talla.setForeground(new java.awt.Color(242, 242, 242));
+        talla.setText("###");
         getContentPane().add(talla, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 471, 212, 24));
 
-        nombre.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(257, 441, 304, 24));
+        nombre.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        nombre.setForeground(new java.awt.Color(242, 242, 242));
+        nombre.setText("nombre prenda");
+        getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, 304, 24));
 
-        precio.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        precio.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        precio.setForeground(new java.awt.Color(255, 255, 255));
+        precio.setText("$$$");
+        precio.setToolTipText("");
         getContentPane().add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 501, 109, 24));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("USD");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 501, 91, 24));
 
         jLabel2.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(242, 242, 242));
         jLabel2.setText("PamCa");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(331, 28, -1, -1));
 
@@ -187,14 +196,18 @@ public class PrendasSuperiores extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 531, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Talla:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(257, 471, 80, 24));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Precio:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(257, 501, 80, 24));
 
+        jLabel5.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/fondoPrendas.jpg"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 830, 650));
 

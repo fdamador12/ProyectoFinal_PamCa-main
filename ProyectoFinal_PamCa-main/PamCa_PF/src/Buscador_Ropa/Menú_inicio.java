@@ -22,23 +22,19 @@ public class Menú_inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         carrito = new javax.swing.JButton();
         cuenta = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         calzado = new javax.swing.JButton();
         prendassuperiores = new javax.swing.JButton();
         prendasinferiores = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel_fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 204, 204));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
-        jLabel1.setText("PamCa");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 40, -1, -1));
 
         carrito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/carro_compras.png"))); // NOI18N
         carrito.addActionListener(new java.awt.event.ActionListener() {
@@ -55,9 +51,6 @@ public class Menú_inicio extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(858, 40, 80, 59));
-
-        jLabel2.setText("Bienvenido al catalogo de ropa a la moda PamCa. A continuación seleccione el tipo de prenda que esta buscando.");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 143, -1, -1));
 
         calzado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/zapatos_200.png"))); // NOI18N
         calzado.addActionListener(new java.awt.event.ActionListener() {
@@ -84,11 +77,22 @@ public class Menú_inicio extends javax.swing.JFrame {
         getContentPane().add(prendasinferiores, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, -1, 180));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel1.setText("PamCa");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 70, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel2.setText("Bienvenido al catalogo de ropa a la moda PamCa. A continuación seleccione el tipo de prenda que esta buscando.");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, -1, -1));
 
         jLabel_fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/fondoInicio2.jpg"))); // NOI18N
-        jPanel1.add(jLabel_fondo);
+        jPanel1.add(jLabel_fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-586, 35, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 570));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 960, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -72,6 +72,7 @@ public class agregar_ropa extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(242, 242, 242));
         jLabel1.setText("PamCa");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(189, 6, -1, -1));
 
@@ -82,15 +83,23 @@ public class agregar_ropa extends javax.swing.JFrame {
         });
         getContentPane().add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 83, 156, -1));
 
+        jLabel2.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(242, 242, 242));
         jLabel2.setText("ID:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(139, 86, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(242, 242, 242));
         jLabel3.setText("Nombre:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 120, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(242, 242, 242));
         jLabel4.setText("Tipo de prenda:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 160, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(242, 242, 242));
         jLabel5.setText("Talla:");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 197, -1, -1));
 
@@ -111,6 +120,8 @@ public class agregar_ropa extends javax.swing.JFrame {
         });
         getContentPane().add(agregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(189, 451, -1, -1));
 
+        jLabel7.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(242, 242, 242));
         jLabel7.setText("Precio:");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(117, 240, -1, -1));
 
@@ -124,9 +135,13 @@ public class agregar_ropa extends javax.swing.JFrame {
         getContentPane().add(buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(293, 357, -1, -1));
         getContentPane().add(cantidades, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 277, 156, -1));
 
+        jLabel8.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(242, 242, 242));
         jLabel8.setText("Cantidad:");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 280, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(242, 242, 242));
         jLabel9.setText("Imagen:");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 320, -1, -1));
 
@@ -154,6 +169,8 @@ public class agregar_ropa extends javax.swing.JFrame {
         getContentPane().add(tipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 157, 156, -1));
         getContentPane().add(talla, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 197, 156, -1));
 
+        jLabel10.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(242, 242, 242));
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/fondoIngreso.jpg"))); // NOI18N
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 550));
 

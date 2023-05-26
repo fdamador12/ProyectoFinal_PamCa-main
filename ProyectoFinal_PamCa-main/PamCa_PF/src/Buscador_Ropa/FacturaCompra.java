@@ -41,30 +41,36 @@ public class FacturaCompra extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(242, 242, 242));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/cuenta_usuario_25.png"))); // NOI18N
         jLabel2.setText("Compra hecha por:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 238, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(242, 242, 242));
         jLabel3.setText("PamCa");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(248, 39, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Vladimir Script", 1, 32)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(242, 242, 242));
         jLabel4.setText("¡Gracias por su compra!");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(189, 126, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(242, 242, 242));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/fecha.png"))); // NOI18N
         jLabel5.setText("Fecha de la compra:");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 182, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(242, 242, 242));
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/nuevo_producto.png"))); // NOI18N
         jLabel6.setText("Cantidad de articulos:");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 295, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(242, 242, 242));
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/precio.png"))); // NOI18N
         jLabel7.setText("Precio total:");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(139, 347, -1, -1));
@@ -77,20 +83,26 @@ public class FacturaCompra extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(245, 423, -1, -1));
 
-        nombre.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        nombre.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        nombre.setForeground(new java.awt.Color(242, 242, 242));
         getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(338, 238, 174, 23));
 
-        date.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        date.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        date.setForeground(new java.awt.Color(242, 242, 242));
         getContentPane().add(date, new org.netbeans.lib.awtextra.AbsoluteConstraints(338, 182, 225, 23));
 
-        amount.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        amount.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        amount.setForeground(new java.awt.Color(242, 242, 242));
         getContentPane().add(amount, new org.netbeans.lib.awtextra.AbsoluteConstraints(338, 297, 174, 23));
 
-        pricee.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        pricee.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        pricee.setForeground(new java.awt.Color(242, 242, 242));
         getContentPane().add(pricee, new org.netbeans.lib.awtextra.AbsoluteConstraints(338, 349, 174, 23));
 
+        jLabel1.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(242, 242, 242));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/fondoIngreso.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 530));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

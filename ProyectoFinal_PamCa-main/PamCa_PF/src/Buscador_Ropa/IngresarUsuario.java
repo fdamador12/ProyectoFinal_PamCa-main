@@ -41,43 +41,59 @@ public class IngresarUsuario extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Vladimir Script", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(242, 242, 242));
         jLabel1.setText("PamCa");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 29, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(242, 242, 242));
         jLabel2.setText("Bienvenido a PamCa, para ingresar su cuenta  llene los siguientes campos con la"); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 100, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(242, 242, 242));
         jLabel3.setText(" información corrspontiende, recuerde  que si se trata de una cuenta de administrador debe especificarlo.");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 122, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(242, 242, 242));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/usuario_gris.png"))); // NOI18N
         jLabel4.setText("Nombre de usuario:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 194, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(242, 242, 242));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/candado_gris.png"))); // NOI18N
         jLabel5.setText("Contraseña:");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 243, -1, -1));
 
+        jLabel6.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(242, 242, 242));
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/tipo_cuenta.png"))); // NOI18N
         jLabel6.setText("Tipo de usuario:");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 289, -1, -1));
 
         buttonGroup1.add(admin);
+        admin.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        admin.setForeground(new java.awt.Color(242, 242, 242));
         admin.setText("Administrador");
         getContentPane().add(admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 291, -1, -1));
 
         buttonGroup1.add(cliente);
+        cliente.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        cliente.setForeground(new java.awt.Color(242, 242, 242));
         cliente.setText("Cliente");
         getContentPane().add(cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 328, -1, -1));
         getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 195, 167, -1));
 
+        acceder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/dedo_color.png"))); // NOI18N
         acceder.setText("Acceder");
         acceder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 accederActionPerformed(evt);
             }
         });
-        getContentPane().add(acceder, new org.netbeans.lib.awtextra.AbsoluteConstraints(276, 367, -1, -1));
+        getContentPane().add(acceder, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, -1, -1));
 
         regresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/flecha_regresar.png"))); // NOI18N
         regresar.addActionListener(new java.awt.event.ActionListener() {
@@ -88,8 +104,10 @@ public class IngresarUsuario extends javax.swing.JFrame {
         getContentPane().add(regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 419, -1, -1));
         getContentPane().add(contra, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 244, 167, -1));
 
+        jLabel7.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(242, 242, 242));
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Buscador_Ropa/fondoIngreso.jpg"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 500));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

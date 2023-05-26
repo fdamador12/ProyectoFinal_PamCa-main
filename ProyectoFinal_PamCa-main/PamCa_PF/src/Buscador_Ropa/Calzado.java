@@ -149,7 +149,8 @@ public class Calzado extends javax.swing.JFrame {
         getContentPane().add(talla, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 468, 215, 24));
 
         nombre.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 438, 304, 24));
+        nombre.setText("NOMBRE PRENDA");
+        getContentPane().add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 460, 304, 24));
 
         precio.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         getContentPane().add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 498, 106, 24));
